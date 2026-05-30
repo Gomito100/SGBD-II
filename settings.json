@@ -1,0 +1,30 @@
+{
+  // ============================================================
+  // Configuração da extensão MongoDB for VS Code
+  // Ficheiro: .vscode/settings.json (na pasta raiz do projeto)
+  // ============================================================
+
+  // String de ligação usada pela extensão MongoDB for VS Code
+  // (MongoDB: Connect → colar esta string na caixa de ligação)
+  "mdb.connectionSaving.defaultConnectionSavingLocation": "Workspace",
+
+  // Configurações do editor Python
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/bin/python",
+  "python.terminal.activateEnvironment": true,
+
+  // Formatar ficheiros .js e .py ao guardar
+  "editor.formatOnSave": true,
+
+  // Associar ficheiros .env ao tipo dotenv (para syntax highlight)
+  "files.associations": {
+    "*.env": "dotenv",
+    "*.mongo": "javascript"
+  },
+
+  // Excluir node_modules e cache do explorador de ficheiros
+  "files.exclude": {
+    "**/__pycache__": true,
+    "**/*.pyc": true,
+    ".venv": true
+  }
+}
